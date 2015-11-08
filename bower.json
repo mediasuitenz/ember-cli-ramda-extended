@@ -13,5 +13,6 @@
     "loader.js": "ember-cli/loader.js#3.2.1",
     "qunit": "~1.18.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "version": "0.1.0"
 }
