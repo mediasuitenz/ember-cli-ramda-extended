@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-ramda-extended",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Add ramda-extended and ramda-extended-rsvp to your Emberjs apps.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,12 +11,28 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mediasuitenz/ember-cli-ramda-extended.git"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": {
+    "name": "Patrick Nilsen Walsh",
+    "email": "patrick.nilsen.walsh@gmail.com",
+    "url": "http://github.com/pnw"
+  },
+  "maintainers": [
+    {
+      "name": "Patrick Nilsen Walsh",
+      "email": "patrick.nilsen.walsh@gmail.com"
+    }
+  ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mediasuitenz/ember-cli-ramda-extended/issues"
+  },
   "devDependencies": {
     "broccoli-asset-rev": "^2.1.2",
     "ember-cli": "1.13.8",
@@ -38,7 +54,13 @@
     "ember-try": "0.0.6"
   },
   "keywords": [
-    "ember-addon"
+    "ramda",
+    "ramda-extended",
+    "ramda-extended-rsvp",
+    "rsvp",
+    "ember",
+    "ember-addon",
+    "ember-cli",
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.3"

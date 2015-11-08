@@ -8,7 +8,9 @@
   }
 
 }(this, function (R) {
-  R._addRSVP(Ember.RSVP)
+  if (!R.rsvp) {
+    throw new Exception ('Missing ramda-extended-rsvp dependency')
+  }
 
   ///* Ember-specific functions */
 

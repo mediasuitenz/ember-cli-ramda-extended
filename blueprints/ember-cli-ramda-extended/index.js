@@ -3,6 +3,15 @@ module.exports = {
   normalizeEntityName () {},
 
   afterInstall () {
-    return this.addBowerPackageToProject('ramda-extended', '0.2.1')
+    return this.addBowerPackagesToProject([
+      {
+        name: 'ramda-extended',
+        target: '0.2.1'
+      },
+      {
+        name: 'ramda-extended-rsvp',
+        target: '0.1.0'
+      }
+    ])
   }
 };
