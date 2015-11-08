@@ -6,11 +6,11 @@ module.exports = {
     return this.addBowerPackagesToProject([
       {
         name: 'ramda-extended',
-        target: '0.2.1'
+        target: '0.3.1'
       },
       {
         name: 'ramda-extended-rsvp',
-        target: '0.1.0'
+        target: '0.1.1'
       }
     ])
   }

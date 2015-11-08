@@ -60,7 +60,7 @@
     "rsvp",
     "ember",
     "ember-addon",
-    "ember-cli",
+    "ember-cli"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.3"

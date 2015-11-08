@@ -1,25 +1,33 @@
 # Ember-cli-ramda-extended
 
-This README outlines the details of collaborating on this Ember addon.
+This package does the following:
 
-## Installation
+1. Adds ramda-ember to your project
+2. Adds ramda-ember-rsvp to your project (works with Ember.RSVP)
+3. Re-implements regular R function like `prop` and `pluck` to be compatible with Ember.js getters and setters (See warning below)
+4. Adds `R.Ember` namespace to house Ember-specific functions
 
-* `git clone` this repository
+## WARNING
+
+This is a work in progress.
+**Not all functions have been modified to be Emberjs compatible.**
+When in doubt, check the source to see if a function has been implemented.
+If you need a Ramda function that has not been ported yet, then please submit a pull request!
+
+## See Also
+
+* [ramda-extended](https://github.com/mediasuitenz/ramda-extended)
+* [ramda-extended-rsvp](https://github.com/mediasuitenz/ramda-extended-rsvp)
+* [ember-cli-ramda-extended](https://github.com/mediasuitenz/ember-cli-ramda-extended)
+
+
+## Installation (Ember-cli)
+
+* `ember install Ember-cli-ramda-extended`
 * `npm install`
 * `bower install`
 
-## Running
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+## Usage Notes
 
-## Running Tests
-
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+After installing, the `R` namespace is globally available, including `R.rsvp` and `R.Ember`
