@@ -112,3 +112,44 @@ export function transformBy (valueProperty, fn) {
   }).readOnly()
 
 }
+
+/**
+ * Checks whether the value from `this.get(valueProperty)` is a member of a list
+ * `listProperty` may be a String or an Array
+ *
+ * - String: `this.get(listProperty)` is used when checking for membership
+ * - Array: The array is used as-is when checking for membership
+ *
+ * @param {String} valueProperty
+ * @param {String|Array} listProperty
+ */
+export function contains (valueProperty, listProperty) {
+  // user has passed a string
+  if (R.is(String, listProperty)) {
+    return computed(valueProperty, `${listProperty}.@each`, function () {
+      return R.contains(this.get(valueProperty), this.get(listProperty))
+    })
+  } else {
+    // user has passed an array
+    return computed(valueProperty, `asd`, function () {
+      return R.contains(this.get(valueProperty), listProperty)
+    })
+  }
+
+
+}
+
+/**
+ * Safely parses a JSON value that may have accidentally been stringified multiple times.
+ * @param {String} valueProperty the name of an attribute that holds a json value
+ */
+export function parsedJSON (valueProperty) {
+  return computed(valueProperty, function () {
+    let value = this.get(valueProperty)
+    while (R.is(String, value)) {
+      value = JSON.parse(value)
+    }
+    return value
+  })
+
+}
