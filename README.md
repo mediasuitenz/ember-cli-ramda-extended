@@ -16,9 +16,9 @@ If you need a Ramda function that has not been ported yet, then please submit a 
 
 ## See Also
 
-* ramda-extended ([npm](https://github.com/mediasuitenz/ramda-extended)/[github](https://github.com/mediasuitenz/ramda-extended))
-* ramda-extended-rsvp ([npm](https://github.com/mediasuitenz/ramda-extended-rsvp)/[github](https://github.com/mediasuitenz/ramda-extended-rsvp))
-* ember-cliramda-extended ([npm](https://www.npmjs.com/package/ember-cli-ramda-extended)/[github](https://github.com/mediasuitenz/ember-cli-ramda-extended))
+* ramda-extended ([npm](https://www.npmjs.com/package/ramda-extended)/[github](https://github.com/mediasuitenz/ramda-extended))
+* ramda-extended-rsvp ([npm](https://www.npmjs.com/package/ramda-extended-rsvp)/[github](https://github.com/mediasuitenz/ramda-extended-rsvp))
+* ember-cli-ramda-extended ([npm](https://www.npmjs.com/package/ember-cli-ramda-extended)/[github](https://github.com/mediasuitenz/ember-cli-ramda-extended))
 
 
 ## Installation (Ember-cli)

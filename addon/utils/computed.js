@@ -3,6 +3,7 @@
  * Inspiration: https://github.com/martndemus/ember-array-computed-macros/blob/master/addon/index.js
  */
 
+// TODO: We should move this to vendor and add it to an R.computed namespace
 const {computed, NAME_KEY} = Ember
 
 /**
@@ -98,7 +99,7 @@ export function filter (listProperty, valueProperty, fn) {
 
 /**
  * A simple transform for a single value
- *
+ * TODO: Should we bind the `fn` param to `this` context?
  * @param {String} valueProperty
  * @param {Function} fn (a -> b)
  * @return {*}
