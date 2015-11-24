@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-ramda-extended",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Add ramda-extended and ramda-extended-rsvp to your Emberjs apps.",
   "directories": {
     "doc": "doc",
