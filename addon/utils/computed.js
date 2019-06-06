@@ -1,15 +1,19 @@
+/* global R, Ember */
 /**
  * A collection of property macros
  * Inspiration: https://github.com/martndemus/ember-array-computed-macros/blob/master/addon/index.js
  */
 
 // TODO: We should move this to vendor and add it to an R.computed namespace
-const {computed, NAME_KEY} = Ember
+import { computed } from '@ember/object';
+import EmberObject from '@ember/object';
+
+const { NAME_KEY } = Ember
 
 /**
  * A groupBy group.
  */
-const Grouping = Ember.Object.extend({})
+const Grouping = EmberObject.extend({})
 Grouping[NAME_KEY] = 'computed.groupBy.Grouping'
 
 
